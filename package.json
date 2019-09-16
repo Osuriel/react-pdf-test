@@ -4,9 +4,24 @@
   "description": "A simple project to try to reproduce memory leak issue",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node -- src/index.js"
   },
   "author": "Omar Suriel",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/node": "7.6.1",
+    "@babel/preset-react": "7.0.0",
+    "@react-pdf/renderer": "1.6.4",
+    "babel-node": "0.0.1-security",
+    "koa": "2.8.1",
+    "react": "16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.0",
+    "@babel/plugin-transform-arrow-functions": "7.2.0",
+    "@babel/preset-env": "7.6.0",
+    "nodemon": "1.19.2"
+  }
 }
